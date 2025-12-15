@@ -63,3 +63,12 @@ body::before {
     object-fit: cover;
 }
 
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 20px 15px 10px;
+}
+
