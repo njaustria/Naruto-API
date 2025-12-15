@@ -43,3 +43,12 @@ body::before {
     z-index: 1020;
 }
 
+.card-custom {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 300px;
+}
+
