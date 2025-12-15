@@ -22,3 +22,24 @@ body::before {
     z-index: -1; 
 }
 
+.naruto-logo-img {
+    height: 40px;
+    width: auto;
+}
+
+.header-glass {
+    border-bottom-left-radius: 80px; 
+    border-bottom-right-radius: 80px; 
+    
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.header-glass {
+    z-index: 1020;
+}
+
