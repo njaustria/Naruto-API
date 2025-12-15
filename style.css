@@ -52,3 +52,8 @@ body::before {
     height: 300px;
 }
 
+.card-custom:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
