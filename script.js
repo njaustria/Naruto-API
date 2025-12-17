@@ -58,9 +58,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderPagination() {
         const totalPages = Math.ceil(filteredCharacters.length / perPage);
         paginationContainer.innerHTML = `
-            <button class="btn btn-outline-dark px-4" ${currentPage === 1 ? "disabled" : ""} id="prevBtn">Prev</button>
+            <button class="btn btn-warning px-4" ${currentPage === 1 ? "disabled" : ""} id="prevBtn">Prev</button>
             <span class="align-self-center fw-bold">Page ${currentPage} of ${totalPages || 1}</span>
-            <button class="btn btn-outline-dark px-4" ${currentPage >= totalPages ? "disabled" : ""} id="nextBtn">Next</button>
+            <button class="btn btn-warning px-4" ${currentPage >= totalPages ? "disabled" : ""} id="nextBtn">Next</button>
         `;
 
         document.getElementById("prevBtn").onclick = () => {
@@ -116,15 +116,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     searchBtn.onclick = handleSearch;
     searchInput.onkeyup = (e) => {
-        if (e.key === "Enter") {
-            handleSearch();
-        } else {
-            handleSearch();
-        }
+        handleSearch();
     };
 
     homeLink.onclick = (e) => {
-        e.preventDefault();
         searchInput.value = "";
         handleSearch();
         window.scrollTo(0, 0);
